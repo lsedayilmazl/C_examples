@@ -16,9 +16,9 @@ int main()
     for (int j = 0; j < 9; j++)
       if (numbers[i] > numbers[j])
       {                          // We're doing some sort of relocation from here.
-        temp = numbers[i];       // I assigned the x-indexed element of the array to temp
-        numbers[i] = numbers[j]; // assigns the y-indexed element of the array to the x-indexed element
-        numbers[j] = temp;       // temp is assigned to the y-indexed element of the array
+        temp = numbers[i];       // I assigned the i-indexed element of the array to temp
+        numbers[i] = numbers[j]; // assigns the j-indexed element of the array to the i-indexed element
+        numbers[j] = temp;       // temp is assigned to the j-indexed element of the array
       }
   }
   //output of the sorted array
